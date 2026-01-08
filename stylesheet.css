@@ -1,0 +1,354 @@
+body {
+    display: grid;
+    margin: 50px;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    min-height: 100vh;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: 10% 55% 25% 25%; 
+}
+#menu {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+#image {
+    width: 400px;
+    height: 400px;
+    grid-column: 3;
+    grid-row: 2;
+}
+#title {
+    font-weight: bold;
+    color: purple;
+    grid-column: 1  / span 3;
+    grid-row: 1;
+}
+#title2 {
+    font-weight: bold;
+    color: purple;
+}
+#form {
+    grid-column: 1 / span 4;
+    grid-row: 3;
+}
+#formGrid {
+    display: grid;
+    grid-template-columns: 15% 35% 15% 35%;
+    grid-template-rows: 15% 15% 15% 15% 70% 15%;
+    gap: 5px;
+}
+#Voornaam {
+    grid-column: 1;
+    grid-row: 1;
+}
+#VoornaamAntwoord {
+    grid-column: 2;
+    grid-row: 1;
+}
+#Achternaam {
+    grid-column: 3;
+    grid-row: 1;
+}
+#AchternaamAntwoord {
+    grid-column: 4;
+    grid-row: 1;
+}
+#Adres {
+    grid-column: 1;
+    grid-row: 2;
+}
+#AdresAntwoord {
+    grid-column: 2;
+    grid-row: 2;
+}
+#Huisnummer {
+    grid-column: 3;
+    grid-row: 2;
+}
+#HuisnummerAntwoord {
+    grid-column: 4;
+    grid-row: 2;
+}
+#Postcode {
+    grid-column: 1;
+    grid-row: 3;
+}
+#PostcodeAntwoord {
+    grid-column: 2;
+    grid-row: 3;
+}
+#Stad {
+    grid-column: 3;
+    grid-row: 3;
+}
+#StadAntwoord {
+    grid-column: 4;
+    grid-row: 3;
+}
+#Geslacht {
+    grid-column: 1;
+    grid-row: 4;
+}
+#GeslachtAntwoord {
+    grid-column: 2 / span 2;
+    grid-row: 4;
+}
+#Geboortedatum {
+    grid-column: 3;
+    grid-row: 4;
+}
+#GeboortedatumAntwoord {
+    grid-column: 4;
+    grid-row: 4;
+}
+#Antwoord {
+    grid-column: 1;
+    grid-row: 5;
+}
+#AntwoordAntwoord {
+    grid-column: 2 / span 3;
+    grid-row: 5;
+}
+#Verzenden {
+    grid-column: 4;
+    grid-row: 6;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    body {
+        display: grid;
+        margin: 50px;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        min-height: 100vh;
+        grid-template-columns: repeat(3, 33.33%);
+        grid-template-rows: 10% 50% 25% 25%; 
+    }
+    #menu {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+    #image {
+        width: 400px;
+        height: 400px;
+        grid-column: 3;
+        grid-row: 2;
+    }
+    #title {
+        font-weight: bold;
+        color: purple;
+        grid-column: 1  / span 3;
+        grid-row: 1;
+    }
+    #title2 {
+        font-weight: bold;
+        color: purple;
+    }
+    #form {
+        grid-column: 1 / span 4;
+        grid-row: 3;
+    }
+    #formGrid {
+        display: grid;
+        grid-template-columns: 20% 30% 25% 25%;
+        grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 70% 10%;
+        gap: 5px;
+    }
+    #Voornaam {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #VoornaamAntwoord {
+        grid-column: 2 / span 3;
+        grid-row: 1;
+    }
+    #Achternaam {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #AchternaamAntwoord {
+        grid-column: 2 / span 3;
+        grid-row: 2;
+    }
+    #Adres {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    #AdresAntwoord {
+        grid-column: 2 / span 3;
+        grid-row: 3;
+    }
+    #Huisnummer {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    #HuisnummerAntwoord {
+        grid-column: 2 / span 3;
+        grid-row: 4;
+    }
+    #Postcode {
+        grid-column: 1;
+        grid-row: 5;
+    }
+    #PostcodeAntwoord {
+        grid-column: 2 / span 3;
+        grid-row: 5;
+    }
+    #Stad {
+        grid-column: 1;
+        grid-row: 6;
+    }
+    #StadAntwoord {
+        grid-column: 2 / span 3;
+        grid-row: 6;
+    }
+    #Geslacht {
+        grid-column: 1;
+        grid-row: 7;
+    }
+    #GeslachtAntwoord {
+        grid-column: 2 / span 3;
+        grid-row: 7;
+    }
+    #Geboortedatum {
+        grid-column: 1;
+        grid-row: 8;
+    }
+    #GeboortedatumAntwoord {
+        grid-column: 2 / span 3;
+        grid-row: 8;
+    }
+    #Antwoord {
+        grid-column: 1;
+        grid-row: 9;
+    }
+    #AntwoordAntwoord {
+        grid-column: 2 / span 3;
+        grid-row: 9;
+    }
+    #Verzenden {
+        grid-column: 4;
+        grid-row: 10;
+    }
+}
+
+/* Phone */
+@media (max-width: 767px) {
+    body {
+    display: grid;
+    margin: 50px;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    min-height: 100vh;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-rows: 10% 30% 65% 80%; 
+    }
+    #menu {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+    }
+    #image {
+        width: 100%;
+        height: 500px;
+        grid-column: 1 / span 3;
+        grid-row: 3;
+    }
+    #title {
+        font-size: small;
+        font-weight: bold;
+        color: purple;
+        grid-column: 1  / span 3;
+        grid-row: 1;
+    }
+    #title2 {
+        font-weight: bold;
+        color: purple;
+    }
+    #form {
+        grid-column: 1 / span 4;
+        grid-row: 4;
+    }
+    #formGrid {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: repeat(22, 5%);
+        gap: 5px;
+    }
+    #Voornaam {
+        grid-column: 1 / span 4;
+        grid-row: 1 / span 3;
+    }
+    #VoornaamAntwoord {
+        grid-column: 1 / span 4;
+        grid-row: 2;
+    }
+    #Achternaam {
+        grid-column: 1 / span 4;
+        grid-row: 3;
+    }
+    #AchternaamAntwoord {
+        grid-column: 1 / span 4;
+        grid-row: 4;
+    }
+    #Adres {
+        grid-column: 1 / span 4;
+        grid-row: 5;
+    }
+    #AdresAntwoord {
+        grid-column: 1 / span 4;
+        grid-row: 6;
+    }
+    #Huisnummer {
+        grid-column: 1 / span 4;
+        grid-row: 7;
+    }
+    #HuisnummerAntwoord {
+        grid-column: 1 / span 4;
+        grid-row: 8;
+    }
+    #Postcode {
+        grid-column: 1 / span 4;
+        grid-row: 9;
+    }
+    #PostcodeAntwoord {
+        grid-column: 1 / span 4;
+        grid-row: 10;
+    }
+    #Stad {
+        grid-column: 1 / span 4;
+        grid-row: 11;
+    }
+    #StadAntwoord {
+        grid-column: 1 / span 4;
+        grid-row: 12;
+    }
+    #Geslacht {
+        grid-column: 1 / span 4;
+        grid-row: 13;
+    }
+    #GeslachtAntwoord {
+        grid-column: 1;
+        grid-row: 14 / span 3;
+    }
+    #Geboortedatum {
+        grid-column: 1 / span 4;
+        grid-row: 17;
+    }
+    #GeboortedatumAntwoord {
+        grid-column: 1 / span 4;
+        grid-row: 18;
+    }
+    #Antwoord {
+        grid-column: 1 / span 4;
+        grid-row: 19;
+    }
+    #AntwoordAntwoord {
+        grid-column: 1 / span 4;
+        grid-row: 20;
+    }
+    #Verzenden {
+        grid-column: 1 / span 4;
+        grid-row: 22;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Basic HTML Site</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+    <div id="title">
+        <h1>Deelname prijsvraag - Commander Keen: Goodbye Galaxy!</h1>
+    </div>
+
+    <div id="menu">
+        <div>
+            <p>
+                Onlangs is Commander Keen: Goodbye Galaxy! verschenen en dus hebben wij, in
+                samenwerking met id Software een toffe prijsvraag voor jullie. Vanaf nu maak je
+                kans op een van de vier exemplaren van de game. Vul onderstaande gegevens in
+                en geef antwoord op de volgende vraag:
+            </p>
+            <h3 id="title2">
+                Tegen welk buitenaards ras neemt Commander Keen het op in Goodby
+                Galaxy!?
+            </h3>
+            <p>
+                Wie weet maak jij kans op een van de vier Limited Edition uitvoeringen van de
+                game Commander Keen: Goodbye Galaxy!
+            </p>
+        </div>
+    </div>
+
+    <image id="image" src="Benodigde bestanden/commanderkeen.jpg" alt="Commander Keen">
+
+        <div id="form">
+            <form id="formGrid">
+                <label id="Voornaam" for="question">Voornaam: </label>
+                <input type="text" id="VoornaamAntwoord" name="question" required>
+                <label id="Achternaam" for="question">Achternaam: </label>
+                <input type="text" id="AchternaamAntwoord" name="question" required>
+                <label id="Adres" for="question">Adres: </label>
+                <input type="text" id="AdresAntwoord" name="question" required>
+                <label id="Huisnummer" for="question">Huisnummer: </label>
+                <input type="text" id="HuisnummerAntwoord" name="question" required>
+                <label id="Postcode" for="question">Postcode: </label>
+                <input type="text" id="PostcodeAntwoord" name="question" required>
+                <label id="Stad" for="question">Stad: </label>
+                <input type="text" id="StadAntwoord" name="question" required>
+                <label id="Geslacht" for="question">Geslacht: </label>
+
+                <div id="GeslachtAntwoord">
+                    <input type="radio" name="geslacht" value="man" required>
+                    <label for="question">Man</label>
+                    <input type="radio" name="geslacht" value="vrouw" required>
+                    <label for="question">Vrouw</label>
+                    <input type="radio" name="geslacht" value="overige" required>
+                    <label for="question">Overige</label>
+                </div>
+
+                <label id="Geboortedatum" for="question">Geboortedatum: </label>
+                <input type="date" id="GeboortedatumAntwoord" name="question" required>
+                <label id="Antwoord" for="question">Antwoord: </label>
+                <input type="text" id="AntwoordAntwoord" name="question" required>
+                <button id="Verzenden" type="submit">Verzenden</button>
+            </form>
+        </div>
+        </div>
+</body>
+
+</html>
